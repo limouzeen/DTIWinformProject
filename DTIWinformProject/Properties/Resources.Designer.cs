@@ -63,6 +63,16 @@ namespace DTIWinformProject.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add {
+            get {
+                object obj = ResourceManager.GetObject("add", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap calculator2 {
             get {
                 object obj = ResourceManager.GetObject("calculator2", resourceCulture);
@@ -106,6 +116,16 @@ namespace DTIWinformProject.Properties {
         internal static System.Drawing.Bitmap exit3 {
             get {
                 object obj = ResourceManager.GetObject("exit3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap exit31 {
+            get {
+                object obj = ResourceManager.GetObject("exit31", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

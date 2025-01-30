@@ -46,6 +46,41 @@ namespace DTIWinformProject
         }
 
 
+        public static void textBox_KeyPressNum(object sender, KeyPressEventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+
+            // Allow control keys like Backspace
+            if (char.IsControl(e.KeyChar))
+            {
+                return;
+            }
+
+            // Allow only digits (0-9)
+            if (!char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Block other characters
+                return;
+            }
+
+            // Prevent leading zeros
+            if (e.KeyChar == '0' && textBox.Text.Length == 0)
+            {
+                e.Handled = true; // Block leading zero
+                return;
+            }
+
+            // Prevent multiple leading zeros (e.g., "000001")
+            if (textBox.Text == "0")
+            {
+                textBox.Text = e.KeyChar.ToString(); // Replace "0" with the new number
+                textBox.SelectionStart = textBox.Text.Length; // Move cursor to end
+                e.Handled = true; // Block input since we replaced it manually
+            }
+        }
+
+
+
 
     }
 }

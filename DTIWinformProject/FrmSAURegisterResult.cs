@@ -24,7 +24,25 @@ namespace DTIWinformProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
+
+        public void SetRegisterData(string studentId, string studentName, string date, string type, string level, string subjects, Image studentImage)
+        {
+            lbNoShow.Text = studentId;
+            lbNameShow.Text = studentName;
+            lbDateShow.Text = date;
+            lbTypeShow.Text = type;
+            lbLevelShow.Text = level;
+            lbSubjectShow.Text = subjects;
+
+            // Set image if provided
+            if (studentImage != null)
+            {
+                pbImageRgisShow.BackgroundImage = new Bitmap(studentImage);
+                pbImageRgisShow.BackgroundImageLayout = ImageLayout.Stretch;
+            }
+        }
+
     }
 }

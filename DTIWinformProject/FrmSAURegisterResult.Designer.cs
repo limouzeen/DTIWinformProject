@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.pbImageRgisShow = new System.Windows.Forms.Panel();
+            this.lbLevelShow = new System.Windows.Forms.Label();
+            this.lbTypeShow = new System.Windows.Forms.Label();
+            this.lbNameShow = new System.Windows.Forms.Label();
+            this.lbNoShow = new System.Windows.Forms.Label();
+            this.lbDateShow = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbSubjectShow = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btOk = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -56,79 +56,79 @@
             this.label1.Text = "ผลการลงทะเบียนเรียน";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel1
+            // pbImageRgisShow
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(180, 81);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(175, 189);
-            this.panel1.TabIndex = 52;
+            this.pbImageRgisShow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbImageRgisShow.Location = new System.Drawing.Point(180, 81);
+            this.pbImageRgisShow.Margin = new System.Windows.Forms.Padding(4);
+            this.pbImageRgisShow.Name = "pbImageRgisShow";
+            this.pbImageRgisShow.Size = new System.Drawing.Size(175, 189);
+            this.pbImageRgisShow.TabIndex = 52;
             // 
-            // label18
+            // lbLevelShow
             // 
-            this.label18.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label18.CausesValidation = false;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.Green;
-            this.label18.Location = new System.Drawing.Point(247, 489);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(127, 23);
-            this.label18.TabIndex = 62;
-            this.label18.Text = "XXXXXXXXXX";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbLevelShow.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbLevelShow.CausesValidation = false;
+            this.lbLevelShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLevelShow.ForeColor = System.Drawing.Color.Green;
+            this.lbLevelShow.Location = new System.Drawing.Point(247, 489);
+            this.lbLevelShow.Name = "lbLevelShow";
+            this.lbLevelShow.Size = new System.Drawing.Size(203, 23);
+            this.lbLevelShow.TabIndex = 62;
+            this.lbLevelShow.Text = "XXXXXXXXXX";
+            this.lbLevelShow.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label17
+            // lbTypeShow
             // 
-            this.label17.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label17.CausesValidation = false;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.Green;
-            this.label17.Location = new System.Drawing.Point(247, 442);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(127, 23);
-            this.label17.TabIndex = 61;
-            this.label17.Text = "XXXXXXXXXX";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbTypeShow.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbTypeShow.CausesValidation = false;
+            this.lbTypeShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTypeShow.ForeColor = System.Drawing.Color.Green;
+            this.lbTypeShow.Location = new System.Drawing.Point(247, 442);
+            this.lbTypeShow.Name = "lbTypeShow";
+            this.lbTypeShow.Size = new System.Drawing.Size(186, 23);
+            this.lbTypeShow.TabIndex = 61;
+            this.lbTypeShow.Text = "XXXXXXXXXX";
+            this.lbTypeShow.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label16
+            // lbNameShow
             // 
-            this.label16.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label16.CausesValidation = false;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Green;
-            this.label16.Location = new System.Drawing.Point(247, 395);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(127, 23);
-            this.label16.TabIndex = 60;
-            this.label16.Text = "XXXXXXXXXX";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbNameShow.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbNameShow.CausesValidation = false;
+            this.lbNameShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNameShow.ForeColor = System.Drawing.Color.Green;
+            this.lbNameShow.Location = new System.Drawing.Point(247, 395);
+            this.lbNameShow.Name = "lbNameShow";
+            this.lbNameShow.Size = new System.Drawing.Size(186, 23);
+            this.lbNameShow.TabIndex = 60;
+            this.lbNameShow.Text = "XXXXXXXXXX";
+            this.lbNameShow.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label15
+            // lbNoShow
             // 
-            this.label15.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label15.CausesValidation = false;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.Green;
-            this.label15.Location = new System.Drawing.Point(247, 348);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(127, 23);
-            this.label15.TabIndex = 59;
-            this.label15.Text = "XXXXXXXXXX";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbNoShow.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbNoShow.CausesValidation = false;
+            this.lbNoShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNoShow.ForeColor = System.Drawing.Color.Green;
+            this.lbNoShow.Location = new System.Drawing.Point(247, 348);
+            this.lbNoShow.Name = "lbNoShow";
+            this.lbNoShow.Size = new System.Drawing.Size(186, 23);
+            this.lbNoShow.TabIndex = 59;
+            this.lbNoShow.Text = "XXXXXXXXXX";
+            this.lbNoShow.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label14
+            // lbDateShow
             // 
-            this.label14.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label14.CausesValidation = false;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Green;
-            this.label14.Location = new System.Drawing.Point(247, 302);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(127, 23);
-            this.label14.TabIndex = 58;
-            this.label14.Text = "XXXXXXXXXX";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbDateShow.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbDateShow.CausesValidation = false;
+            this.lbDateShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDateShow.ForeColor = System.Drawing.Color.Green;
+            this.lbDateShow.Location = new System.Drawing.Point(247, 302);
+            this.lbDateShow.Name = "lbDateShow";
+            this.lbDateShow.Size = new System.Drawing.Size(219, 23);
+            this.lbDateShow.TabIndex = 58;
+            this.lbDateShow.Text = "XXXXXXXXXX";
+            this.lbDateShow.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label9
             // 
@@ -185,18 +185,18 @@
             this.label11.Text = "ชื่อ-สกุล";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label2
+            // lbSubjectShow
             // 
-            this.label2.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.CausesValidation = false;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Green;
-            this.label2.Location = new System.Drawing.Point(247, 535);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 23);
-            this.label2.TabIndex = 64;
-            this.label2.Text = "XXXXXXXXXX";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbSubjectShow.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbSubjectShow.CausesValidation = false;
+            this.lbSubjectShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSubjectShow.ForeColor = System.Drawing.Color.Green;
+            this.lbSubjectShow.Location = new System.Drawing.Point(247, 535);
+            this.lbSubjectShow.Name = "lbSubjectShow";
+            this.lbSubjectShow.Size = new System.Drawing.Size(203, 23);
+            this.lbSubjectShow.TabIndex = 64;
+            this.lbSubjectShow.Text = "XXXXXXXXXX";
+            this.lbSubjectShow.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label3
             // 
@@ -228,21 +228,21 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(529, 710);
+            this.ClientSize = new System.Drawing.Size(548, 710);
             this.Controls.Add(this.btOk);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbSubjectShow);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label14);
+            this.Controls.Add(this.lbLevelShow);
+            this.Controls.Add(this.lbTypeShow);
+            this.Controls.Add(this.lbNameShow);
+            this.Controls.Add(this.lbNoShow);
+            this.Controls.Add(this.lbDateShow);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pbImageRgisShow);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -258,18 +258,18 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Panel pbImageRgisShow;
+        private System.Windows.Forms.Label lbLevelShow;
+        private System.Windows.Forms.Label lbTypeShow;
+        private System.Windows.Forms.Label lbNameShow;
+        private System.Windows.Forms.Label lbNoShow;
+        private System.Windows.Forms.Label lbDateShow;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbSubjectShow;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btOk;
     }

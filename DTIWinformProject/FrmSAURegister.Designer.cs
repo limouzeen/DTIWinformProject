@@ -29,50 +29,52 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.mcdRegis = new System.Windows.Forms.MonthCalendar();
+            this.lsSubjectRegis = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbNoRegis = new System.Windows.Forms.TextBox();
+            this.tbNameRegis = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.button5 = new System.Windows.Forms.Button();
+            this.rdFundRegis = new System.Windows.Forms.RadioButton();
+            this.rdNormalRegis = new System.Windows.Forms.RadioButton();
+            this.btSelectImageRegis = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.tslbUsername = new System.Windows.Forms.ToolStripLabel();
             this.tslbDateTime = new System.Windows.Forms.ToolStripLabel();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btSelectSub = new System.Windows.Forms.Button();
+            this.btSelectAllSub = new System.Windows.Forms.Button();
+            this.btUnSelectSub = new System.Windows.Forms.Button();
+            this.btUnSelectAllSub = new System.Windows.Forms.Button();
+            this.cbbLevelRegis = new System.Windows.Forms.ComboBox();
+            this.btExit = new System.Windows.Forms.Button();
+            this.btRegis = new System.Windows.Forms.Button();
+            this.btCancel = new System.Windows.Forms.Button();
             this.btMainMenu = new System.Windows.Forms.Button();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.lsbSubjectedRegis = new System.Windows.Forms.ListBox();
+            this.cbConfirmRegis = new System.Windows.Forms.CheckBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.pbImageRegis = new System.Windows.Forms.PictureBox();
             this.toolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImageRegis)).BeginInit();
             this.SuspendLayout();
             // 
-            // monthCalendar1
+            // mcdRegis
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(80, 169);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 0;
+            this.mcdRegis.Location = new System.Drawing.Point(80, 169);
+            this.mcdRegis.Name = "mcdRegis";
+            this.mcdRegis.TabIndex = 0;
             // 
-            // listBox1
+            // lsSubjectRegis
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Items.AddRange(new object[] {
+            this.lsSubjectRegis.FormattingEnabled = true;
+            this.lsSubjectRegis.ItemHeight = 16;
+            this.lsSubjectRegis.Items.AddRange(new object[] {
             "ภาษาไทย",
             "ภาษาอังกฤษ",
             "ภาษาญี่ปุ่น",
@@ -82,13 +84,18 @@
             "พละศีกษา",
             "ประวัติศาสตร์",
             "คอมพิวเตอร์เบื้องต้น",
-            "บัญชีเบื้องต้น"});
-            this.listBox1.Location = new System.Drawing.Point(81, 473);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(165, 132);
-            this.listBox1.TabIndex = 1;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            "บัญชีเบื้องต้น",
+            "กฏหมายเบื้องต้น",
+            "เศรษฐศาสตร์เบื้องต้น",
+            "หลักการบริหาร",
+            "เคมี",
+            "ชีววิทยา"});
+            this.lsSubjectRegis.Location = new System.Drawing.Point(81, 473);
+            this.lsSubjectRegis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lsSubjectRegis.Name = "lsSubjectRegis";
+            this.lsSubjectRegis.Size = new System.Drawing.Size(165, 132);
+            this.lsSubjectRegis.TabIndex = 1;
+            this.lsSubjectRegis.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -125,23 +132,23 @@
             this.label2.Text = "เลขประจำตัวนักเรียน";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox1
+            // tbNoRegis
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(424, 169);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(166, 22);
-            this.textBox1.TabIndex = 30;
+            this.tbNoRegis.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbNoRegis.Location = new System.Drawing.Point(424, 169);
+            this.tbNoRegis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbNoRegis.Name = "tbNoRegis";
+            this.tbNoRegis.Size = new System.Drawing.Size(166, 22);
+            this.tbNoRegis.TabIndex = 30;
             // 
-            // textBox2
+            // tbNameRegis
             // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Location = new System.Drawing.Point(424, 247);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(166, 22);
-            this.textBox2.TabIndex = 32;
+            this.tbNameRegis.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbNameRegis.Location = new System.Drawing.Point(424, 247);
+            this.tbNameRegis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tbNameRegis.Name = "tbNameRegis";
+            this.tbNameRegis.Size = new System.Drawing.Size(166, 22);
+            this.tbNameRegis.TabIndex = 32;
             // 
             // label3
             // 
@@ -167,41 +174,42 @@
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // radioButton2
+            // rdFundRegis
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(524, 335);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(67, 20);
-            this.radioButton2.TabIndex = 35;
-            this.radioButton2.Text = "กองทุนฯ";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdFundRegis.AutoSize = true;
+            this.rdFundRegis.Location = new System.Drawing.Point(524, 335);
+            this.rdFundRegis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdFundRegis.Name = "rdFundRegis";
+            this.rdFundRegis.Size = new System.Drawing.Size(67, 20);
+            this.rdFundRegis.TabIndex = 35;
+            this.rdFundRegis.Text = "กองทุนฯ";
+            this.rdFundRegis.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rdNormalRegis
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(425, 334);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(48, 20);
-            this.radioButton1.TabIndex = 34;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "ปกติ";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdNormalRegis.AutoSize = true;
+            this.rdNormalRegis.Checked = true;
+            this.rdNormalRegis.Location = new System.Drawing.Point(425, 334);
+            this.rdNormalRegis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.rdNormalRegis.Name = "rdNormalRegis";
+            this.rdNormalRegis.Size = new System.Drawing.Size(48, 20);
+            this.rdNormalRegis.TabIndex = 34;
+            this.rdNormalRegis.TabStop = true;
+            this.rdNormalRegis.Text = "ปกติ";
+            this.rdNormalRegis.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btSelectImageRegis
             // 
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(880, 367);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(35, 31);
-            this.button5.TabIndex = 36;
-            this.button5.Text = "...";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btSelectImageRegis.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btSelectImageRegis.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSelectImageRegis.Location = new System.Drawing.Point(880, 367);
+            this.btSelectImageRegis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btSelectImageRegis.Name = "btSelectImageRegis";
+            this.btSelectImageRegis.Size = new System.Drawing.Size(35, 31);
+            this.btSelectImageRegis.TabIndex = 36;
+            this.btSelectImageRegis.Text = "...";
+            this.btSelectImageRegis.UseVisualStyleBackColor = true;
+            this.btSelectImageRegis.Click += new System.EventHandler(this.btSelectImageRegis_Click);
             // 
             // toolStrip1
             // 
@@ -210,9 +218,9 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tslbUsername,
             this.tslbDateTime});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 647);
+            this.toolStrip1.Location = new System.Drawing.Point(0, 641);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(985, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(985, 31);
             this.toolStrip1.TabIndex = 37;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -252,114 +260,122 @@
             this.label6.Text = "รายวิชาที่ลงทะเบียน";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // button2
+            // btSelectSub
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button2.Location = new System.Drawing.Point(275, 473);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 30);
-            this.button2.TabIndex = 40;
-            this.button2.Text = ">";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btSelectSub.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSelectSub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btSelectSub.Location = new System.Drawing.Point(275, 473);
+            this.btSelectSub.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btSelectSub.Name = "btSelectSub";
+            this.btSelectSub.Size = new System.Drawing.Size(75, 30);
+            this.btSelectSub.TabIndex = 40;
+            this.btSelectSub.Text = ">";
+            this.btSelectSub.UseVisualStyleBackColor = true;
+            this.btSelectSub.Click += new System.EventHandler(this.btSelectSub_Click);
             // 
-            // button3
+            // btSelectAllSub
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button3.Location = new System.Drawing.Point(275, 508);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 30);
-            this.button3.TabIndex = 41;
-            this.button3.Text = ">>";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btSelectAllSub.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSelectAllSub.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btSelectAllSub.Location = new System.Drawing.Point(275, 508);
+            this.btSelectAllSub.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btSelectAllSub.Name = "btSelectAllSub";
+            this.btSelectAllSub.Size = new System.Drawing.Size(75, 30);
+            this.btSelectAllSub.TabIndex = 41;
+            this.btSelectAllSub.Text = ">>";
+            this.btSelectAllSub.UseVisualStyleBackColor = true;
+            this.btSelectAllSub.Click += new System.EventHandler(this.btSelectAllSub_Click);
             // 
-            // button4
+            // btUnSelectSub
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.Red;
-            this.button4.Location = new System.Drawing.Point(275, 545);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 30);
-            this.button4.TabIndex = 42;
-            this.button4.Text = "<";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btUnSelectSub.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btUnSelectSub.ForeColor = System.Drawing.Color.Red;
+            this.btUnSelectSub.Location = new System.Drawing.Point(275, 545);
+            this.btUnSelectSub.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btUnSelectSub.Name = "btUnSelectSub";
+            this.btUnSelectSub.Size = new System.Drawing.Size(75, 30);
+            this.btUnSelectSub.TabIndex = 42;
+            this.btUnSelectSub.Text = "<";
+            this.btUnSelectSub.UseVisualStyleBackColor = true;
+            this.btUnSelectSub.Click += new System.EventHandler(this.btUnSelectSub_Click);
             // 
-            // button6
+            // btUnSelectAllSub
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.Red;
-            this.button6.Location = new System.Drawing.Point(275, 581);
-            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 30);
-            this.button6.TabIndex = 43;
-            this.button6.Text = "<<";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btUnSelectAllSub.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btUnSelectAllSub.ForeColor = System.Drawing.Color.Red;
+            this.btUnSelectAllSub.Location = new System.Drawing.Point(275, 581);
+            this.btUnSelectAllSub.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btUnSelectAllSub.Name = "btUnSelectAllSub";
+            this.btUnSelectAllSub.Size = new System.Drawing.Size(75, 30);
+            this.btUnSelectAllSub.TabIndex = 43;
+            this.btUnSelectAllSub.Text = "<<";
+            this.btUnSelectAllSub.UseVisualStyleBackColor = true;
+            this.btUnSelectAllSub.Click += new System.EventHandler(this.btUnSelectAllSub_Click);
             // 
-            // comboBox1
+            // cbbLevelRegis
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbbLevelRegis.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbLevelRegis.FormattingEnabled = true;
+            this.cbbLevelRegis.Items.AddRange(new object[] {
             "ชั้นมัธยมศึกษาปีที่ 1",
             "ชั้นมัธยมศึกษาปีที่ 2",
             "ชั้นมัธยมศึกษาปีที่ 3",
             "ชั้นมัธยมศึกษาปีที่ 4",
             "ชั้นมัธยมศึกษาปีที่ 5",
             "ชั้นมัธยมศึกษาปีที่ 6"});
-            this.comboBox1.Location = new System.Drawing.Point(81, 400);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(217, 24);
-            this.comboBox1.TabIndex = 44;
+            this.cbbLevelRegis.Location = new System.Drawing.Point(81, 400);
+            this.cbbLevelRegis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbbLevelRegis.Name = "cbbLevelRegis";
+            this.cbbLevelRegis.Size = new System.Drawing.Size(217, 24);
+            this.cbbLevelRegis.TabIndex = 44;
             // 
-            // button7
+            // btExit
             // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.button7.Image = global::DTIWinformProject.Properties.Resources.exit31;
-            this.button7.Location = new System.Drawing.Point(572, 555);
-            this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button7.Name = "button7";
-            this.button7.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.button7.Size = new System.Drawing.Size(347, 48);
-            this.button7.TabIndex = 48;
-            this.button7.Text = "ปิดโปรแกรม";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button7.UseVisualStyleBackColor = true;
+            this.btExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btExit.Image = global::DTIWinformProject.Properties.Resources.exit31;
+            this.btExit.Location = new System.Drawing.Point(572, 555);
+            this.btExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btExit.Name = "btExit";
+            this.btExit.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btExit.Size = new System.Drawing.Size(347, 48);
+            this.btExit.TabIndex = 48;
+            this.btExit.Text = "ปิดโปรแกรม";
+            this.btExit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btExit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btExit.UseVisualStyleBackColor = true;
+            this.btExit.Click += new System.EventHandler(this.btExit_Click);
             // 
-            // button9
+            // btRegis
             // 
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.button9.Image = global::DTIWinformProject.Properties.Resources.add;
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.Location = new System.Drawing.Point(743, 439);
-            this.button9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button9.Name = "button9";
-            this.button9.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.button9.Size = new System.Drawing.Size(176, 48);
-            this.button9.TabIndex = 47;
-            this.button9.Text = "ลงทะเบียน";
-            this.button9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button9.UseVisualStyleBackColor = true;
+            this.btRegis.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btRegis.Image = global::DTIWinformProject.Properties.Resources.add;
+            this.btRegis.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btRegis.Location = new System.Drawing.Point(743, 439);
+            this.btRegis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btRegis.Name = "btRegis";
+            this.btRegis.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.btRegis.Size = new System.Drawing.Size(176, 48);
+            this.btRegis.TabIndex = 47;
+            this.btRegis.Text = "ลงทะเบียน";
+            this.btRegis.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btRegis.UseVisualStyleBackColor = true;
+            this.btRegis.Click += new System.EventHandler(this.btRegis_Click);
             // 
-            // button8
+            // btCancel
             // 
-            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.button8.Image = global::DTIWinformProject.Properties.Resources.cancel;
-            this.button8.Location = new System.Drawing.Point(572, 500);
-            this.button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button8.Name = "button8";
-            this.button8.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
-            this.button8.Size = new System.Drawing.Size(347, 48);
-            this.button8.TabIndex = 46;
-            this.button8.Text = "ยกเลิก";
-            this.button8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button8.UseVisualStyleBackColor = true;
+            this.btCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btCancel.Image = global::DTIWinformProject.Properties.Resources.cancel;
+            this.btCancel.Location = new System.Drawing.Point(572, 500);
+            this.btCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btCancel.Name = "btCancel";
+            this.btCancel.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btCancel.Size = new System.Drawing.Size(347, 48);
+            this.btCancel.TabIndex = 46;
+            this.btCancel.Text = "ยกเลิก";
+            this.btCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btCancel.UseVisualStyleBackColor = true;
+            this.btCancel.Click += new System.EventHandler(this.btCancel_Click);
             // 
             // btMainMenu
             // 
@@ -375,73 +391,76 @@
             this.btMainMenu.UseVisualStyleBackColor = true;
             this.btMainMenu.Click += new System.EventHandler(this.btMainMenu_Click);
             // 
-            // listBox2
+            // lsbSubjectedRegis
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 16;
-            this.listBox2.Location = new System.Drawing.Point(379, 473);
-            this.listBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(165, 132);
-            this.listBox2.TabIndex = 49;
+            this.lsbSubjectedRegis.FormattingEnabled = true;
+            this.lsbSubjectedRegis.ItemHeight = 16;
+            this.lsbSubjectedRegis.Location = new System.Drawing.Point(379, 473);
+            this.lsbSubjectedRegis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lsbSubjectedRegis.Name = "lsbSubjectedRegis";
+            this.lsbSubjectedRegis.Size = new System.Drawing.Size(165, 132);
+            this.lsbSubjectedRegis.TabIndex = 49;
             // 
-            // checkBox1
+            // cbConfirmRegis
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(572, 462);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(144, 22);
-            this.checkBox1.TabIndex = 50;
-            this.checkBox1.Text = "ยืนยันการลงทะเบียน";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // panel1
-            // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(631, 145);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(225, 252);
-            this.panel1.TabIndex = 51;
+            this.cbConfirmRegis.AutoSize = true;
+            this.cbConfirmRegis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbConfirmRegis.Location = new System.Drawing.Point(572, 462);
+            this.cbConfirmRegis.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbConfirmRegis.Name = "cbConfirmRegis";
+            this.cbConfirmRegis.Size = new System.Drawing.Size(144, 22);
+            this.cbConfirmRegis.TabIndex = 50;
+            this.cbConfirmRegis.Text = "ยืนยันการลงทะเบียน";
+            this.cbConfirmRegis.UseVisualStyleBackColor = true;
             // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // pbImageRegis
+            // 
+            this.pbImageRegis.Location = new System.Drawing.Point(647, 141);
+            this.pbImageRegis.Name = "pbImageRegis";
+            this.pbImageRegis.Size = new System.Drawing.Size(216, 257);
+            this.pbImageRegis.TabIndex = 51;
+            this.pbImageRegis.TabStop = false;
             // 
             // FrmSAURegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(985, 672);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.pbImageRegis);
+            this.Controls.Add(this.cbConfirmRegis);
+            this.Controls.Add(this.lsbSubjectedRegis);
+            this.Controls.Add(this.btExit);
+            this.Controls.Add(this.btRegis);
+            this.Controls.Add(this.btCancel);
+            this.Controls.Add(this.cbbLevelRegis);
+            this.Controls.Add(this.btUnSelectAllSub);
+            this.Controls.Add(this.btUnSelectSub);
+            this.Controls.Add(this.btSelectAllSub);
+            this.Controls.Add(this.btSelectSub);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.btSelectImageRegis);
+            this.Controls.Add(this.rdFundRegis);
+            this.Controls.Add(this.rdNormalRegis);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tbNameRegis);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbNoRegis);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.monthCalendar1);
+            this.Controls.Add(this.mcdRegis);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.btMainMenu);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lsSubjectRegis);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
@@ -451,6 +470,7 @@
             this.Load += new System.EventHandler(this.FrmSAURegister_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImageRegis)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -458,35 +478,36 @@
 
         #endregion
 
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.MonthCalendar mcdRegis;
+        private System.Windows.Forms.ListBox lsSubjectRegis;
         private System.Windows.Forms.Button btMainMenu;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbNoRegis;
+        private System.Windows.Forms.TextBox tbNameRegis;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.RadioButton rdFundRegis;
+        private System.Windows.Forms.RadioButton rdNormalRegis;
+        private System.Windows.Forms.Button btSelectImageRegis;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripLabel tslbUsername;
         private System.Windows.Forms.ToolStripLabel tslbDateTime;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btSelectSub;
+        private System.Windows.Forms.Button btSelectAllSub;
+        private System.Windows.Forms.Button btUnSelectSub;
+        private System.Windows.Forms.Button btUnSelectAllSub;
+        private System.Windows.Forms.ComboBox cbbLevelRegis;
+        private System.Windows.Forms.Button btCancel;
+        private System.Windows.Forms.Button btRegis;
+        private System.Windows.Forms.Button btExit;
+        private System.Windows.Forms.ListBox lsbSubjectedRegis;
+        private System.Windows.Forms.CheckBox cbConfirmRegis;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.PictureBox pbImageRegis;
     }
 }

@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -77,6 +79,46 @@ namespace DTIWinformProject
                 textBox.SelectionStart = textBox.Text.Length; // Move cursor to end
                 e.Handled = true; // Block input since we replaced it manually
             }
+        }
+
+        public static void ValidateName(object sender, KeyPressEventArgs e)
+        {
+            if (!(sender is TextBox textBox)) return;
+
+            // Allow letters, spaces, single dot (.), and single apostrophe (')
+            string pattern = @"[A-Za-zÀ-ÖØ-öø-ÿ .'’]";
+
+            // Allow control characters (Backspace, Delete, etc.)
+            if (char.IsControl(e.KeyChar))
+            {
+                return;
+            }
+
+            // If the character does not match the allowed pattern, block it
+            if (!Regex.IsMatch(e.KeyChar.ToString(), pattern))
+            {
+                e.Handled = true; // Prevent input
+                return;
+            }
+
+            // Prevent consecutive dots (..) or apostrophes ('')
+            if (textBox.Text.Length > 0)
+            {
+                char lastChar = textBox.Text[textBox.Text.Length - 1];
+
+                if ((e.KeyChar == '.' && lastChar == '.') || (e.KeyChar == '\'' && lastChar == '\''))
+                {
+                    e.Handled = true; // Block repeated dots/apostrophes
+                    return;
+                }
+            }
+        }
+
+
+        public static string ConvertToThaiDate(DateTime date)
+        {
+            CultureInfo thaiCulture = new CultureInfo("th-TH");
+            return date.ToString("dd MMMM yyyy", thaiCulture);
         }
 
 
